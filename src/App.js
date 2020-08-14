@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/styles.scss';
+import Head from './components/Head';
 import Live from './components/Live';
 import Ladder from './components/Ladder';
 
@@ -22,17 +23,20 @@ class App extends React.Component {
 	}
 	render() {
 		return (
-			<div className="App">
-				<h1>Super Coaches</h1>
-				<div className="buttons">
-					<button className={this.state.activePage === 1 && 'active-page'} onClick={this.goToLadder}>Ladder</button>
-					<button className={this.state.activePage === 2 && 'active-page'} onClick={this.goToDraw}>Draw</button>
+			<>
+				<Head />
+				<div className="App">
+					<h1>Super Coaches</h1>
+					<div className="buttons">
+						<button className={this.state.activePage === 1 ? 'active-page' : undefined} onClick={this.goToLadder}>Ladder</button>
+						<button className={this.state.activePage === 2 ? 'active-page' : undefined} onClick={this.goToDraw}>Draw</button>
+					</div>
+					<div className="box">
+						{this.state.activePage === 1 && <Ladder />}
+						{this.state.activePage === 2 && <Live />}
+					</div>
 				</div>
-				<div className="box">
-					{this.state.activePage === 1 && <Ladder />}
-					{this.state.activePage === 2 && <Live />}
-				</div>
-			</div>
+			</>
 		);
 	}
 }
