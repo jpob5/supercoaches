@@ -71,10 +71,10 @@ const draw = [
         [[thrillhouse, 1228], [warriors, 1069]],
     ],
     [
-        [[cnts, 0], [price, 0]],
-        [[boncos, 0], [thrillhouse, 0]],
-        [[middle, 0], [warriors, 0]],
-        [[queens, 0], [wizards, 0]],
+        [[cnts, 944], [price, 876]],
+        [[boncos, 985], [thrillhouse, 1124]],
+        [[middle, 1202], [warriors, 1178]],
+        [[queens, 1223], [wizards, 1214]],
     ],
     [
         [[cnts, 0], [warriors, 0]],
