@@ -7,7 +7,7 @@ class Live extends React.Component {
         super(props);
 
         this.state = {
-            currentWeek: 10
+            currentWeek: 11
         }
 
         this.changeWeek = this.changeWeek.bind(this);
